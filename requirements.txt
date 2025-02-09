@@ -2,3 +2,4 @@ Flask
 flask_restful
 requests
 beautifulsoup4
+urllib3==1.26.6
