@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template
+from flask import jsonify
 from flask_restful import Resource, Api, reqparse
 import requests
 from bs4 import BeautifulSoup
