@@ -12,7 +12,7 @@ class Goods(Resource):
       print(response)
       bs = BeautifulSoup(response.text, 'html.parser')
       temp = bs.find('h1', 'pageTitle')
-      return jsonify({'ok': temp.text.split(' - ')[0]})
+      return temp.text.split(' - ')[0].encode('utf-8').decode()
 
 app = Flask(__name__)
 api = Api(app)
